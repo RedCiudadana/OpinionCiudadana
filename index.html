@@ -1,54 +1,382 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Opinión Ciudadana</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
 
-    <!-- Facebook stuff -->
-    <meta property="og:title" content="Opinión Ciudadana">
-    <meta property="og:description" content="Opinión Ciudadana es la herramienta del Organismo Legislativo que le da participación al usuario para que ejerza su ciudadanía y aporte al debate parlamentario. #CongresoGT">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://opinionciudadana.gt/">
-    <meta property="og:image" content="https://raw.githubusercontent.com/RedCiudadana/OpinionCiudadana/af9fed3f454003912aafd805eb71701017f4a688/img/front-banner-f3cde876eef4c146b52deee0db6dbc7e.jpg">
-    <meta property="fb:app_id" content="1077578065594362" />
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-    <!-- Twitter stuff -->
-    <meta name="twitter:title" content="Opinión Ciudadana" />
-    <meta name="twitter:description" content="Opinión Ciudadana es la herramienta del Organismo Legislativo que le da participación al usuario para que ejerza su ciudadanía y aporte al debate parlamentario. #CongresoGT" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@RedxGuate" />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/RedCiudadana/OpinionCiudadana/af9fed3f454003912aafd805eb71701017f4a688/img/front-banner-f3cde876eef4c146b52deee0db6dbc7e.jpg" />
+		<title>Opinión Ciudadana - Congreso de la República de Guatemala</title>	
 
-    <link rel="icon" type="image/x-icon" href="/img/logo-red-ciudadana-no-white-74b9ca582f13bfa815d64bebce68501f.png">
+		<meta name="keywords" content="Opinion Ciudadana, Congreso Guatemala, Red Ciudadana, Gobierno Abierto Guatemala, Guatemala" />
+		<meta name="description" content="Opinión Ciudadana - Congreso de la República de Guatemala">
+		<meta name="author" content="Asociación Civil Red Ciudadana">
 
-    
-<meta name="red-audiencias-publicas/config/environment" content="%7B%22modulePrefix%22%3A%22red-audiencias-publicas%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22hash%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22spreadsheetUrl%22%3A%22https%3A//docs.google.com/spreadsheets/d/1CRrYWtNkp-o7mMqUhW6QgOn9L9c9jF5dqVlcg4E3szA/pubhtml%22%2C%22staticFilesUrl%22%3Anull%2C%22name%22%3A%22red-audiencias-publicas%22%2C%22version%22%3A%220.0.0+119ce3f0%22%7D%2C%22disqus%22%3A%7B%22shortname%22%3A%22opinionciudadanagt%22%7D%2C%22googleAnalytics%22%3A%7B%22webPropertyId%22%3A%22UA-101881741-1%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		<!-- Facebook stuff -->
+	    <meta property="og:title" content="Opinión Ciudadana" />
+	    <meta property="og:description" content="Opina, propone y decidí cómo quieres que sean los de proyectos de ley en Guatemala.">
+	    <meta property="og:type" content="website">
+	    <meta property="og:url" content="http://opinionciudadana.gt/">
+	    <meta property="og:image" content="http://opinionciudadana.gt/img/logo.png">
+	    <meta property="fb:app_id" content="" />
 
-ga('create', 'UA-101881741-1', 'auto');
-</script>
+	    <!-- Twitter stuff -->
+	    <meta name="twitter:title" content="Opinión Ciudadana" />
+	    <meta name="twitter:description" content="Opina, propone y decidí cómo quieres que sean los de proyectos de ley en Guatemala." />
+	    <meta name="twitter:card" content="summary" />
+	    <meta name="twitter:site" content="@RedxGuate" />
+	    <meta name="twitter:image" content="http://opinionciudadana.gt/img/logo.png" />
 
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="/assets/vendor-a20ccad8eb0cd9b66ca7c5a170945cfb.css">
-    <link rel="stylesheet" href="/assets/red-audiencias-publicas-8b77ef863e2f00569d3e9b6c313e695b.css">
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    
-  </head>
-  <body>
-    
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
-    <script src="/assets/vendor-da10e60fa17ec24a5f9d4aba3a2dc274.js"></script>
-    <script src="/assets/red-audiencias-publicas-8ba6064026fc1d005ff9e6a2ecc7f74f.js"></script>
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.min.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
 
-    
-  </body>
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="vendor/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="vendor/rs-plugin/css/layers.css">
+		<link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css">
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/skin-corporate-5.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header" class="header-narrow" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 57, 'stickySetTop': '-57px', 'stickyChangeLogo': false}">
+				<div class="header-body">
+ 
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-logo">
+									<a href="index.html">
+										<img alt="Opinion Ciudadana" width="100" height="48" src="img/logo.png">
+									</a>
+								</div>
+							</div>
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-nav">
+										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
+											<i class="fa fa-bars"></i>
+										</button>
+										<ul class="header-social-icons social-icons hidden-xs">
+											<li class="social-icons-facebook"><a href="https://www.facebook.com/congreso.republica.guatemala/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+											<li class="social-icons-twitter"><a href="https://twitter.com/CongresoGuate" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+										</ul>
+										<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+											<nav>
+												<ul class="nav nav-pills" id="mainNav">
+													<li class="">
+														<a class="" href="index.html">
+															Inicio
+														</a>
+													</li>
+													<li class="">
+														<a href="index.html#comofunciona">
+															¿CÓMO FUNCIONA?
+														</a>
+													</li>
+													<li class="">
+														<a class="" href="http://congresoabierto.org/">
+															Parlamento Abierto
+														</a>
+													</li>
+													<li class="active">
+														<a class="" href="http://congreso.opinionciudadana.gt/signin">
+															INGRESAR
+														</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div role="main" class="main">
+				<div class="slider-container rev_slider_wrapper">
+					<div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 500}">
+						<ul>
+							<li data-transition="fade">
+
+								<img src="img/slider.jpg"  
+									alt=""
+									data-bgposition="center center" 
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									class="rev-slidebg">
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="home-intro" id="home-intro">
+					<div class="container">
+
+						<div class="row">
+							<div class="col-md-8">
+								<p>
+									¡Opina sobre los proyectos de ley! Queremos conocer tu opinión sobre diferentes temas.
+								</p>
+							</div>
+							<div class="col-md-4">
+								<div class="get-started">
+									<a href="http://congreso.opinionciudadana.gt/" class="btn btn-lg btn-primary">¡Opina!</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<section id="comofunciona">
+				<div class="container">
+					<div class="row center">
+						<div class="col-md-12">
+							<h2 class="text-uppercase text-color-dark font-weight-bold">¿Cómo puedo participar?</h2>
+						</div>
+					</div>
+					<div class="row center">
+						<div class="col-md-4 col-sm-4">
+							<img src="img/registrate.png" class="img-center custom-center-img-responsive mb-md" alt />
+							<h4 class="text-uppercase font-weight-bold mb-lg">Regístrate</h4>
+							<p class="custom-text-color-1">Haz click en Ingresar, completa el formulario y sé parte de la Opinión Ciudadana en Guatemala.</p>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<img src="img/vota.png" class="img-center custom-center-img-responsive mb-md" alt />
+							<h4 class="text-uppercase font-weight-bold mb-lg">Opina</h4>
+							<p class="custom-text-color-1">Opina, propone y decidí cómo quieres que sean los de proyectos de ley en Guatemala.</p>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<img src="img/comparte.png" class="img-center custom-center-img-responsive mb-md" alt />
+							<h4 class="text-uppercase font-weight-bold mb-lg">Comparte</h4>
+							<p class="custom-text-color-1">Comparte en redes sociales para que más guatemaltecos puedan aportar sus opiniones.</p>	
+						</div>
+					</div>
+				</div>
+				</section>
+
+				<div class="container">
+					<br>
+					<h2>Proyectos de Ley</h2>
+
+					<ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
+						<li data-option-value="*" class="active"><a href="#">Mostrar Todo</a></li>
+						<li data-option-value=".justicia"><a href="#">Justicia</a></li>
+						<li data-option-value=".salud"><a href="#">Salud</a></li>
+						<li data-option-value=".contrataciones"><a href="#">Contrataciones</a></li>
+						<li data-option-value=".electoral"><a href="#">Electoral</a></li>
+					</ul>
+
+					<hr>
+
+					<div class="row">
+
+						<div class="sort-destination-loader sort-destination-loader-showing">
+							<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
+								<li class="col-md-3 isotope-item electoral">
+									<div class="portfolio-item">
+										<a href="http://congreso.opinionciudadana.gt/topic/591c77c8f1083bf92ca83818">
+											<span class="thumb-info thumb-info-lighten">
+												<span class="thumb-info-wrapper">
+													<img src="img/iconos-02.png" class="img-responsive" alt="">
+													<span class="thumb-info-title">
+														<span class="thumb-info-inner">Reformas LEPP</span>
+														<span class="thumb-info-type">Electoral</span>
+													</span>
+													<span class="thumb-info-action">
+														<span class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+													</span>
+												</span>
+											</span>
+										</a>
+									</div>
+								</li>
+								<li class="col-md-3 isotope-item justicia">
+									<div class="portfolio-item">
+										<a href="http://congreso.opinionciudadana.gt/">
+											<span class="thumb-info thumb-info-lighten">
+												<span class="thumb-info-wrapper">
+													<img src="img/iconos-01.png" class="img-responsive" alt="">
+													<span class="thumb-info-title">
+														<span class="thumb-info-inner">Reformas</span>
+														<span class="thumb-info-type">Justicia</span>
+													</span>
+													<span class="thumb-info-action">
+														<span class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+													</span>
+												</span>
+											</span>
+										</a>
+									</div>
+								</li>
+								<li class="col-md-3 isotope-item contrataciones">
+									<div class="portfolio-item">
+										<a href="http://congreso.opinionciudadana.gt/">
+											<span class="thumb-info thumb-info-lighten">
+												<span class="thumb-info-wrapper">
+													<img src="img/iconos-03.png" class="img-responsive" alt="">
+													<span class="thumb-info-title">
+														<span class="thumb-info-inner">Reformas</span>
+														<span class="thumb-info-type">Contrataciones</span>
+													</span>
+													<span class="thumb-info-action">
+														<span class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+													</span>
+												</span>
+											</span>
+										</a>
+									</div>
+								</li>
+								<li class="col-md-3 isotope-item justicia">
+									<div class="portfolio-item">
+										<a href="http://congreso.opinionciudadana.gt/">
+											<span class="thumb-info thumb-info-lighten">
+												<span class="thumb-info-wrapper">
+													<img src="img/iconos-04.png" class="img-responsive" alt="">
+													<span class="thumb-info-title">
+														<span class="thumb-info-inner">Reformas Justicia</span>
+														<span class="thumb-info-type">Justicia</span>
+													</span>
+													<span class="thumb-info-action">
+														<span class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+													</span>
+												</span>
+											</span>
+										</a>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+ 
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="footer-ribbon">
+							<span>Opinión Ciudadana</span>
+						</div>
+						<div class="col-md-5">
+							<h4>Congreso de la Republica de Guatemala:</h4>
+								<p>El Congreso de la República de Guatemala es el órgano legislativo unicameral de Guatemala. Está conformado por 158 diputados electos democráticamente, de manera directa, para un período de cuatro años con posibilidad de reelección.</p>
+						</div>
+						<div class="col-md-5">
+							<div class="contact-details">
+								<h4>Contáctanos:</h4>
+								<ul class="contact">
+									<li><p><i class="fa fa-map-marker"></i> <strong>Dirección:</strong> 9 Avenida 9-44 Zona 1, Guatemala, Ciudad.</p></li>
+									<li><p><i class="fa fa-phone"></i> <strong>Teléfono:</strong>22447878</p></li>
+									<li><p><i class="fa fa-envelope"></i> <strong>Correo Electrónico:</strong> <a href="info@redciudadana.org">info@redciudadana.org</a></p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<h4>Síguenos en:</h4>
+							<ul class="social-icons">
+									<li class="social-icons-facebook"><a href="https://www.facebook.com/congreso.republica.guatemala/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li class="social-icons-twitter"><a href="https://twitter.com/CongresoGuate" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+									</ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-1">
+								<a href="http://redciudadana.org/" class="logo">
+									<img alt="Asociación Civil Red Ciudadana" class="img-responsive" src="img/redciudadana.png">
+								</a>
+							</div>
+							<div class="col-md-7">
+								<a href="http://redciudadana.org/"> Desarrollado por Asociación Civil Red Ciudadana</a>
+							</div>
+							<div class="col-md-4">
+								<nav id="sub-menu">
+									<ul>
+										<li><a href="http://www.congreso.gob.gt">Organismo Legislativo</a></li>
+										<li><a href="http://gobiernoabierto.gob.gt/">Gobierno Abierto</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
+		<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+		<script src="vendor/jquery-cookie/jquery-cookie.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="vendor/common/common.min.js"></script>
+		<script src="vendor/jquery.validation/jquery.validation.min.js"></script>
+		<script src="vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+		<script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>
+		<script src="vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+		<script src="vendor/isotope/jquery.isotope.min.js"></script>
+		<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="vendor/vide/vide.min.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+			ga('create', 'UA-101881741-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</body>
 </html>
