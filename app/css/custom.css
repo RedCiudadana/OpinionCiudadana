@@ -51,3 +51,12 @@ section.section {
     padding: 70px 0px;
     border: none !important;
 }
+
+#proyectos-ley .sort-source li {
+    float: none;
+    font-size: 20px;
+}
+
+#proyectos-ley .nav-pills>li+li {
+    margin-top: 10px;
+}
