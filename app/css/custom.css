@@ -23,3 +23,31 @@ ul.nav-pills > li.active > a:focus {
 a, a:hover, a:focus {
     color: #545759;
 }
+
+#comofunciona {
+    background-color: #2d094c;
+}
+
+#comofunciona,
+#comofunciona h1,
+#comofunciona h2,
+#comofunciona h3,
+#comofunciona h4,
+#comofunciona p {
+    color: #fff;
+    text-transform: none;
+}
+
+#comofunciona p {
+    font-weight: 300;
+}
+
+#comofunciona img {
+    width: 25%;
+}
+
+section.section {
+    position: relative;
+    padding: 70px 0px;
+    border: none !important;
+}
