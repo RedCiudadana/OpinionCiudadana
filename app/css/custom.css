@@ -54,9 +54,52 @@ section.section {
 
 #proyectos-ley .sort-source li {
     float: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #proyectos-ley .nav-pills>li+li {
     margin-top: 10px;
+}
+
+#proyectos-menu {
+    float: left;
+}
+
+#proyectos-menu a,
+#proyectos-menu a:hover,
+#proyectos-menu a:focus {
+    color: #202d3e;
+    font-weight: 800;
+}
+
+#proyectos-menu .active a,
+#proyectos-menu .active a:hover,
+#proyectos-menu .active a:focus {
+    color: #ffffff;
+}
+
+#proyectos-ley h2 {
+    color: #202d3e;
+}
+
+.thumb-info .thumb-info-title {
+    color: #202d3e;
+    background: none;
+    text-transform: none;
+    font-weight: 700;
+    padding-bottom: 5px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    bottom: 0%;
+    font-size: 14px;
+    z-index: 0;
+}
+
+.thumb-info:hover .thumb-info-title {
+    background: none;
+}
+
+.thumb-info.thumb-info-lighten .thumb-info-wrapper:after {
+    background: rgba(120, 184, 242, 0.75);
 }
