@@ -28,17 +28,17 @@ a, a:hover, a:focus {
     background-color: #2d094c;
 }
 
-#comofunciona,
-#comofunciona h1,
-#comofunciona h2,
-#comofunciona h3,
-#comofunciona h4,
-#comofunciona p {
+.font-white,
+.font-white h1,
+.font-white h2,
+.font-white h3,
+.font-white h4,
+.font-white p {
     color: #fff;
     text-transform: none;
 }
 
-#comofunciona p {
+.font-white p {
     font-weight: 300;
 }
 
@@ -125,4 +125,46 @@ section.section {
 .thumb-info:hover .thumb-info-action {
     opacity: 1;
     transform: translate(0%, -50%);
+}
+
+#contacto {
+    background-color: rgba(32, 45, 62, 1.0);
+    font-size: 12px;
+}
+
+#contacto .font-weight-bold {
+    font-weight: 600 !important;
+}
+
+.contact {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact i,
+.contact img {
+    margin-right: 10px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+#footer {
+    background: rgb(230, 231, 232);
+}
+
+#footer,
+#footer a,
+#footer a:hover,
+#footer a:focus {
+    color: rgb(64, 64, 65);
+    font-weight: 700;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
